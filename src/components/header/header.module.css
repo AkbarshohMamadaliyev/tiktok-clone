@@ -1,0 +1,104 @@
+.wrapper {
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.search {
+  position: relative;
+  width: 500px;
+  height: 46px;
+  padding-left: 16px;
+  display: flex;
+  background: rgba(22, 24, 35, 0.06);
+  border-radius: 92px;
+}
+
+.search::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 52px;
+  width: 1px;
+  height: 28px;
+  background: rgba(22, 24, 35, 0.12);
+}
+
+input {
+  flex: 1;
+  height: 100%;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.searchBtn {
+  width: 52px;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-top-right-radius: 92px;
+  border-bottom-right-radius: 92px;
+  font-size: 20px;
+  color: rgba(22, 24, 35, 0.34);
+}
+
+.searchBtn:hover {
+  cursor: pointer;
+  background: rgba(22, 24, 35, 0.03);
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+}
+
+.plusBtn {
+  margin-right: 8px;
+  padding-top: 4px;
+  font-size: 16px;
+}
+
+.actionsBtn1 {
+  min-width: 100px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid rgb(211, 211, 211);
+  color: #161823;
+  cursor: pointer;
+  background: transparent;
+}
+
+.actionsBtn2 {
+  min-width: 100px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.moreBtn {
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
